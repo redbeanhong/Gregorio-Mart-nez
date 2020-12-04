@@ -1,0 +1,404 @@
+@import '_style_guide';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    h2 {
+        // font-family: 'Crimson Text','Noto Serif TC', serif;
+        font-weight: 400;
+        // background-color: darksalmon;      
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    p {
+        // font-family: 'Crimson Text','Noto Serif TC', serif;
+        line-height: 36px;
+        // background-color: darkseagreen;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }      
+    }
+
+    .h1-size {
+        // font-family: 'Crimson Text','Noto Serif TC', serif;
+        font-weight: 900;
+        // background-color: darkviolet;
+        @media (max-width: 768px){
+            font-size: 36px;
+        }
+    }
+}
+.text-type{
+    font-family: 'Crimson Text','Noto Serif TC', serif !important;
+}
+/* ========================section1==↓======================== */
+
+/* ----------------------------------------------------------- */
+.mypadding {
+    padding: 60px 0 0 0;
+}
+
+#section1 {
+    width: 100%;
+    padding-top: 6.5rem;
+        //平板版
+    @media screen and(min-width: 768px) {
+        width: 100%;
+        padding-top: 8.5rem;
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+        height: 100vh;
+        padding-top: 8.5rem;
+    }
+
+    .imgboximgbox {
+        width: 37%;
+        height: 50%;
+        background-image: url('../img/04history/DSC02402.jpg');
+        background-size: cover;
+        background-position: center;
+
+        position: absolute;
+        left: 0;
+        bottom: 12%;
+        z-index: 3;
+    }
+
+    .boxmovie {
+        width: 100%;
+        overflow: hidden;
+
+        //平板版
+        @media screen and(min-width: 768px) {
+            width: 100%;
+        }
+
+        //電腦版
+        @media screen and(min-width: 1200px) {
+            height: 100%;
+            width: 70%;
+        }
+
+        #framvideo{
+            
+            width: 100%;
+            //平板版
+            @media screen and(min-width: 768px) {
+                width: 100%;
+            }
+
+            //電腦版
+            @media screen and(min-width: 1200px) {
+                width: auto;
+                min-width: 100%;
+                min-height: 100%;
+            }
+        }
+    }
+
+    .maskmask {
+        width: 100%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        position: absolute;
+        top: 135px;
+    
+        .mask-text {
+            width: 60%;
+            margin-left: auto;
+            padding: 230px 0;
+
+            .text-word {
+                width: 100%;
+                height: 300px;
+                display: flex;
+            
+                .wordpart-l {
+                    width: 10%;
+                    height: 100%;
+                    // background-color: orangered;
+                
+                    h2 {
+                        writing-mode: vertical-lr;
+                        transform: rotate(180deg);
+                        margin: auto;
+                        // background-color: mediumvioletred;
+                    }
+                }
+                .wordpart-r {
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px 0 0 0;
+                
+                    .wordpart-r-t{
+                        p{
+                            padding: 20px 0 0 0;
+                        }
+                    }
+                    .wordpart-r-b {
+                        padding: 60px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ========================section2==↓======================== */
+#section2 {
+//    background-color: indianred;
+   .wordpart{
+        width: 17.5%;
+        @media (max-width: 768px){
+            display: none;
+        }
+        .wordpart {
+            width: 33.33%;
+            height: 100%;
+            margin: auto;
+            
+            h2 {
+                writing-mode: vertical-lr;
+                transform: rotate(180deg);
+                margin: auto;
+            }
+        }
+    }
+
+    .mycontainer {
+        width: 65%;
+        // background-color: palegoldenrod;
+
+        @media (max-width: 768px) {
+            width: 80%;
+            // background-color: orchid;
+            margin: auto;
+
+            .text-word2{
+                width: 10%;
+                // background-color: royalblue;
+                display: block;
+            }
+
+        }
+
+        .wordpart-l {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+                width: 15%;
+                height: 100%;
+
+                h2 {
+                    writing-mode: vertical-lr;
+                    transform: rotate(180deg);
+                    margin: auto;
+                }
+            }
+        }
+        
+
+        .wordpart-r {
+            width: 100%;
+            height: 100%;
+            padding: 10px 0 0 0;
+
+            @media (max-width: 768px) {
+                width: 85%;
+                padding:0;
+            }
+
+            .wordpart-r-t {
+                padding: 20px 0 0 0;
+            }
+            .wordpart-r-b {
+                padding: 50px 0 0 0;
+                @media (max-width: 768px) {
+                    padding: 26px 0 0 0;
+                }
+            }
+        }
+
+    }
+}
+/* ========================section2==↑======================== */
+
+/* ========================section3 & section4==↓======================== */
+#section3 {
+    width: 100%;
+    
+    .manage-word {
+        padding: 50px 0 0 0;
+            @media (max-width: 768px) {
+                padding: 26px 0 0 0;
+            }
+    }
+}
+
+#section4 {
+    width: 100%;
+    margin: 0 0 30px 0;
+
+    .mycontainer {
+        width: 65%;
+        margin: auto;
+        // background-color: firebrick;
+
+        @media (max-width: 768px) {
+            width: 80%;
+            margin: auto;
+        }
+        // --------------------更動在底下---------------------
+        // .card-img {
+        //     width: 350px;
+        //     height: 350px;
+        //     // background-color: blue;
+        //     border-radius: 50%;
+        //     margin: auto;
+        
+        //     background-size: cover;
+        //     background-position: center;
+            
+        //     @media (max-width: 768px) {
+        //             width: 300px;
+        //             height: 300px;
+        //     }
+        // }
+        // .img-1{
+        //     background-image: url('../img/04history/團隊/1總經理.jpg');
+        // }
+        // .img-2{
+        //     background-image: url('../img/04history/團隊/2行銷總監.jpg');
+        // }
+        // .img-3{
+        //     background-image: url('../img/04history/團隊/3首席釀酒師.jpg');
+        // }
+        // .job-color{
+        //     color: #666666;
+        // }
+        // .card-three{
+        //         margin: 0 0 30px 0;
+        // }
+        // --------------------更動在底下---------------------
+    }
+    
+}
+/* ========================section3 & section4==↑======================== */
+
+/* ========================go to top==↓======================== */
+
+.text-decoration-none{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+    z-index: 99;
+    position: relative;
+    
+    //平板版
+    @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding: 4.5rem 0 4.5rem 0;
+    }
+    //電腦版
+    @media screen and(min-width: 1200px) {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 4.5rem 4.5rem 0;
+    }
+
+    .my-gototop{
+        right: 50%;
+        bottom: 30px;
+        
+    
+        
+        //平板版
+        @media screen and(min-width: 768px) {
+            right: 30px;
+            bottom: 30px;
+        }
+    
+        //電腦版
+        @media screen and(min-width: 1200px) {
+            right: 30px;
+            bottom: 30px;
+            
+        }
+    }
+}
+
+/* ========================go to top==↑======================== */
+
+
+/* ========================time line 套件==↓======================== */
+
+.text-type::before{
+    content: attr(data-text data-text);
+    font-family: 'Crimson Text','Noto Serif TC', serif !important;
+    font-size: 26px !important;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.none-block{
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
+.timeline__content-title{
+    font-family: 'Crimson Text','Noto Serif TC', serif !important;
+    font-size: 60px;
+}
+.timeline__content-desc{
+    font-size: 18px;
+}
+.timeline-item--active:before {
+    top: 30% !important;
+}
+
+/* ========================time line 套件==↑======================== */
+
+// ................紅豆改版....................
+.card-img {
+    width: 350px;
+    height: 350px;
+    // background-color: blue;
+    border-radius: 50%;
+    margin: auto;
+
+    background-size: cover;
+    background-position: center;
+    
+    @media (max-width: 768px) {
+            width: 300px;
+            height: 300px;
+    }
+}
+.img-1{
+    background-image: url('../img/04history/團隊/1總經理.jpg');
+}
+.img-2{
+    background-image: url('../img/04history/團隊/2行銷總監.jpg');
+}
+.img-3{
+    background-image: url('../img/04history/團隊/3首席釀酒師.jpg');
+}
+.job-color{
+    color: #666666;
+}
+.card-three{
+        margin: 0 0 30px 0;
+}

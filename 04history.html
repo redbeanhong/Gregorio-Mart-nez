@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馬丁尼茲G.M酒莊</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- GOOGLE字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Serif+TC:wght@400;900&display=swap"
+        rel="stylesheet">
+    <!-- 紅酒動畫 -->
+    <link rel="stylesheet" href="./css/wineglass.css">
+
+    <!-- nav&footer -->
+    <link rel="stylesheet" href="./css/nav-footer.css">
+    <link rel="stylesheet" href="./css/04history.css">
+    <link rel="stylesheet" href="./css/04history-CDN.css">
+
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- ↓↓↓ header 請勿改動感謝 ↓↓↓ -->
+    <header>
+        <div class="pos-f-t fixed-top">
+            <!-- nav-icon，點擊後會跳出navbar -->
+            <nav class="fixed-top justify-content-end">
+                <button class="navbar-toggler header-menu" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent">
+                    <!-- 漢堡條 -->
+                    <a id="header-button" class="hamburger" href="#">
+                        <div class="hamburger-inner"></div>
+                    </a>
+                </button>
+            </nav>
+
+            <!-- navbar -->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="my-nav-bar my-bcg">
+                    <div class="my-mask">
+                        <div class="d-flex align-items-center position-relative w-100 h-100">
+                            <!-- navbar的LOGO -->
+                            <li class="my-nav-logo position-absolute">
+                                <a class="my-text-color-3" href="./index.html">
+                                    <img src="./img/00index/logo.png" alt="logo" width="25%">
+                                </a>
+                            </li>
+
+                            <!-- navbar的內文 -->
+                            <div class="container">
+                                <div class="row">
+
+                                    <!-- 分頁連結的標題 -->
+                                    <div class="col-12 col-md-6 ">
+                                        <ul
+                                            class="w-100 p-3 navbar-btngroup my-text-color-3 nav flex-column nav-pills nav-fill">
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./index.html">
+                                                    <h2>HOME</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./02wine.html">
+                                                    <h2>Wine</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./03about.html">
+                                                    <h2>About</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3 active" href="./04history.html">
+                                                    <h2>History</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./05estate.html">
+                                                    <h2>Estate</h2>
+                                                </a>
+                                            </li>
+                                            <!-- 聯絡我們，在電腦版消失，手機板出現 -->
+                                            <li class="nav-item d-block d-md-none">
+                                                <a class="nav-link my-text-color-3" href="./06contact.html">
+                                                    <h2>Contact</h2>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 聯絡方式，在手機板出現，電腦版消失 -->
+                                    <div class="col-12 col-md-6 d-none d-md-block">
+                                        <div class="w-100 p-3 my-text-color-3">
+                                            <h2>Contact</h2>
+                                            <br>
+                                            <div class="mycconnection">
+                                                <span>
+                                                    <h3>馬丁尼茲G.M酒莊</h3>
+                                                    <p>T:+002-34-941-226-263</p>
+                                                    <p>E:info@gregoriomartinez.com</p>
+                                                    <p>A:Polígono 1 Parcela 12- Nalda La Rioja(Ubicación
+                                                        bodega),26002Logroño,
+                                                        La Rioja</p>
+                                                    <p>AM8:00-PM17:00</p>
+                                                </span>
+                                            </div>
+                                            <br>
+                                            <div class="mycconnection">
+                                                <span>
+                                                    <h3>晨星出版有限公司</h3>
+                                                    <p>T:04-2359-5819</p>
+                                                    <p>E:service@morningstar.com.tw</p>
+                                                    <p>A:臺中市西屯區協和里工業區30路1號</p>
+                                                    <p>AM8:00-PM17:00</p>
+                                                </span>
+                                            </div>
+                                            <br>
+                                            <!-- 改成連結到Contact頁面 -->
+                                            <a class="nav-link my-text-color-3 my-btn" href="./06contact.html">
+                                                <h3>Contact</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!---------------------------------------->
+
+
+
+    <main>
+        <!-- ↓↓↓ 新分頁轉場動畫，請勿改動感謝 ↓↓↓ -->
+        <div class="winebcg fixed-top">
+            <div class="chalice">
+                <div class="liquid red-wine"></div>
+            </div>
+        </div>
+
+        <!-- ↓↓↓ 內容內容內容由此開始 ↓↓↓ -->
+        <!-- ==================================logo↓======================================= -->
+        <div class="my-nav-logo position-absolute">
+            <a class="my-text-color-3 mypadding" href="./index.html">
+                <img src="./img/00index/logo.png" alt="logo" width="25%">
+            </a>
+        </div>
+        <!-- ==================================logo↑======================================= -->
+
+        <!-- ============================================================================================= -->
+        <!-- ============================================================================================= -->
+        <!-- ============================================================================================= -->
+        <!-- ============================================================================================= -->
+        <!-- ============================================================================================= -->
+
+        <!-- ==================================酒莊歷史1======================================= -->
+        <section id="section1" class="d-flex align-items-center justify-content-end">
+            <div class="imgboximgbox d-xl-block d-none"></div>
+            <div class="boxmovie">
+                <video autoplay loop muted id="framvideo">
+                    <source src="./video/aereas_2-8s.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="maskmask d-xl-block d-none">
+                <div class="container">
+                    <div class="mask-text">
+                        <div class="text-word">
+                            <div class="wordpart-l">
+                                <h2>History</h2>
+                            </div>
+                            <div class="wordpart-r">
+                                <div class="wordpart-r-t">
+                                    <p class="h1-size">酒莊歷史</p">
+                                </div>
+                                <div class="wordpart-r-b">
+                                    <p>Don Gregorio Martínez
+                                        憑著對自己村莊的熱情，1980年開始種植葡萄園，高海拔種植不易，在細心的維護下，葡萄園不受全球暖化影響並賦予葡萄酒美妙的酸度，成為酒莊一大特色。</p>
+                                    <p>秉持用愛維護與尊重來管理土地並在每年葡萄收成時，全家大小就會在Don
+                                        Gregorio帶領下一起採收葡萄，這共同分擔與努力的精神，成為馬丁尼茲家族的傳統，並傳承至今。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================================酒莊歷史2======================================= -->
+        <section id="section2" class="py-5 d-xl-none d-block d-flex">
+            <div class="wordpart">
+                <div class="wordpart my-text-color-3">
+                    <h2>History</h2>
+                </div>
+            </div>
+            <div class="mycontainer d-flex">
+                <div class="wordpart-l my-text-color-3">
+                    <h2>History</h2>
+                </div>
+                <div class="wordpart-r">
+                    <div class="wordpart-r-t">
+                        <p class="h1-size my-text-color-3">酒莊歷史</p>
+                    </div>
+                    <div class="wordpart-r-b my-text-color-3">
+                        <p>Don Gregorio Martínez
+                            憑著對自己村莊的熱情，1980年開始種植葡萄園，高海拔種植不易，在細心的維護下，葡萄園不受全球暖化影響並賦予葡萄酒美妙的酸度，成為酒莊一大特色。</p>
+                        <p>秉持用愛維護與尊重來管理土地並在每年葡萄收成時，全家大小就會在Don
+                            Gregorio帶領下一起採收葡萄，這共同分擔與努力的精神，成為馬丁尼茲家族的傳統，並傳承至今。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================================人物介紹======================================= -->
+        <section id="section3" class="py-4 d-flex justify-content-center">
+            <div class="text-center my-text-color-3">
+                <h2>Our team</h2>
+                <p class="h1-size manage-word">經營團隊</p>
+            </div>
+        </section>
+        <section id="section4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-4">
+                        <div class="card-three">
+                            <div class="card-img img-1 my-3"></div>
+                            <div class="card-text text-center my-text-color-3">
+                                <p class="job-color">總經理</p>
+                                <h2>Gregorio Martínez</h2>
+                                <p>監管家族內所有事業，了解葡萄品質的對酒的重要性，致力種植高品質葡萄。延續父親的理念，以永續為原則管理酒莊。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <div class="card-three">
+                            <div class="card-img img-2 my-3"></div>
+                            <div class="card-text text-center my-text-color-3">
+                                <p class="job-color">行銷總監</p>
+                                <h2>Mónica Martínez</h2>
+                                <p>從小在葡萄園中長大，在濡目染下決定延續爺爺理念，大學畢業後隨即進入酒莊工作。目前主要接管國內銷售、財務等工作。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <div class="card-three">
+                            <div class="card-img img-3 my-3"></div>
+                            <div class="card-text text-center my-text-color-3">
+                                <p class="job-color">首席釀酒師</p>
+                                <h2>Miguel Delso Martínez</h2>
+                                <p>大學攻讀釀酒學，畢業後到其他葡萄酒產區精進自己。第一年在美國納帕精品級酒莊Cardinale Winery學習到風土在精品酒中扮演的重要角色。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================================history套件↓======================================= -->
+        <section id="section5">
+            <div class="timeline-container" id="timeline-1"
+                style="background-image: url(&quot;http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg&quot;);">
+                <div class="timeline-header">
+                    <h2 class="timeline-header__subtitle my-text-color-3 text-type">HISTORY</h2>
+                    <h2 class="timeline-header__title h1-size my-text-color-3">馬丁尼茲G.M酒莊</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item timeline-item--active text-type" data-text="Founder創辦人">
+                        <div class="timeline__content"><img class="timeline__img" src="./img/04history/歷史底圖/1970.jpg">
+                            <h2 class="timeline__content-title">1970</h2>
+                            <p class="timeline__content-desc none-block">創辦人 Founder</p>
+                            <p class="timeline__content-desc">Don Gregorio Martínez
+                                陸續地購買了覆蓋三個村莊（納爾達–索爾扎諾–恩特雷納）的鄰近地塊，至今占地超過100公頃。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item text-type" data-text="種植 Planting">
+                        <div class="timeline__content"><img class="timeline__img" src="./img/04history/歷史底圖/1980.jpg">
+                            <h2 class="timeline__content-title">1980</h2>
+                            <p class="timeline__content-desc none-block">種植 Planting</p>
+                            <p class="timeline__content-desc">開始種植葡萄，現今葡萄園面積已超過40公頃。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item text-type" data-text="">
+                        <div class="timeline__content"><img class="timeline__img" src="./img/04history/歷史底圖/1998.jpg">
+                            <h2 class="timeline__content-title">1998</h2>
+                            <p class="timeline__content-desc">開始第一次釀酒試驗。此酒一上市便獲得了金牌，這也為家族的釀酒事業打入一針強心劑。
+                        </div>
+                    </div>
+                    <div class="timeline-item text-type" data-text="技術支援 Technical Support">
+                        <div class="timeline__content"><img class="timeline__img" src="./img/04history/歷史底圖/2001.jpg">
+                            <h2 class="timeline__content-title">2001</h2>
+                            <p class="timeline__content-desc none-block">技術支援 Technical Support</p>
+                            <p class="timeline__content-desc">酒窖正式完工並取得專業技術團隊的支持。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item text-type" data-text="擴展 Expanding">
+                        <div class="timeline__content"><img class="timeline__img" src="./img/04history/歷史底圖/2008.jpg">
+                            <h2 class="timeline__content-title">2008</h2>
+                            <p class="timeline__content-desc none-block">擴展 Expanding</p>
+                            <p class="timeline__content-desc">新增更多葡萄園區。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item text-type" data-text="釀酒師 Winemaker">
+                        <div class="timeline__content"><img class="timeline__img" src="./img/04history/歷史底圖/2017.jpg">
+                            <h2 class="timeline__content-title">2017</h2>
+                            <p class="timeline__content-desc none-block">釀酒師 Winemaker</p>
+                            <p class="timeline__content-desc">Miguel Delso Martínez，首席釀酒師加入。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item text-type" data-text="">
+                        <div class="timeline__content"><img class="timeline__img" src="./img/04history/歷史底圖/2019.jpg">
+                            <h2 class="timeline__content-title">2019</h2>
+                            <p class="timeline__content-desc">葡萄酒大師 Tim Atkin將我們列為里奧哈區的第三級酒莊。Tim Atkin
+                                創立了一套類似波爾多的分級制度，對超過里奧哈產區內超過六百多家酒莊做評比。僅有一百家酒莊被列為列級酒莊。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item text-type" data-text="土壤 soil">
+                        <div class="timeline__content"><img class="timeline__img" src="./img/04history/歷史底圖/2020.jpg">
+                            <h2 class="timeline__content-title">2020</h2>
+                            <p class="timeline__content-desc none-block">土壤 soil</p>
+                            <p class="timeline__content-desc">規劃新葡萄園區，採用更嚴謹的綠色農法種出對環境無傷害</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="text-decoration-none m-auto">
+                    <div class="my-gototop">
+                        <p>TOP</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ↓↓↓ footer 請勿改動感謝 ↓↓↓ -->
+    <footer>
+        <div class="footer-bg w-100">
+            <div class="my-mask-2">
+                <div class="container p-5 my-text-color-3">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-xl-4 d-flex flex-column justify-content-between">
+                            <div
+                                class="d-flex justify-content-md-center justify-content-xl-center align-items-center mb-0 mb-md-5 mb-xl-0">
+                                <img src="./img/00index/logo.png" alt="" width="200px">
+                            </div>
+                            <!-- ↓↓↓ fb icon group for 電腦版 ↓↓↓ -->
+                            <div class="d-none d-md-none d-xl-block">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a class="my-circle my-bg-color-3"
+                                        href="https://www.facebook.com/fincagregoriomartinez/" target="_blank">
+                                        <img src="./img/00index/facebook.svg" alt="facebook" height="100%">
+                                    </a>
+                                    <a class="my-circle my-bg-color-3 mx-3"
+                                        href="https://instagram.com/bodegas_gregorio_martinez?igshid=lx1t13rmrum0"
+                                        target="_blank">
+                                        <img src="./img/00index/instagram.svg" alt="instagram" height="100%">
+                                    </a>
+                                    <a class="my-circle my-bg-color-3"
+                                        href="https://www.youtube.com/watch?v=QdbE9mBoG8U" target="_blank">
+                                        <img src="./img/00index/youtube.svg" alt="youtube" height="100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ↑↑↑ fb icon group for 電腦版 ↑↑↑ -->
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4 my-5 my-md-0">
+                            <span>
+                                <h3>馬丁尼茲G.M酒莊</h3>
+                                <p>T:+002-34-941-226-263</p>
+                                <p>E:info@gregoriomartinez.com</p>
+                                <p>A:Polígono 1 Parcela 12- Nalda La Rioja(Ubicación
+                                    bodega),26002Logroño,
+                                    La Rioja</p>
+                                <p>AM8:00-PM17:00</p>
+                            </span>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <span>
+                                <h3>晨星出版有限公司</h3>
+                                <p>T:04-2359-5819</p>
+                                <p>E:service@morningstar.com.tw</p>
+                                <p>A:臺中市西屯區協和里工業區30路1號</p>
+                                <p>AM8:00-PM17:00</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ↓↓↓ fb icon group for md以下 ↓↓↓ -->
+                <div class="pt-4 pb-2 my-bg-color-6 d-block d-md-block d-xl-none">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="my-circle my-bg-color-3" href="https://www.facebook.com/fincagregoriomartinez/"
+                            target="_blank">
+                            <img src="./img/00index/facebook.svg" alt="facebook" height="100%">
+                        </a>
+                        <a class="my-circle my-bg-color-3 mx-4"
+                            href="https://instagram.com/bodegas_gregorio_martinez?igshid=lx1t13rmrum0" target="_blank">
+                            <img src="./img/00index/instagram.svg" alt="instagram" height="100%">
+                        </a>
+                        <a class="my-circle my-bg-color-3" href="https://www.youtube.com/watch?v=QdbE9mBoG8U"
+                            target="_blank">
+                            <img src="./img/00index/youtube.svg" alt="youtube" height="100%">
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-end my-text-color-3 mt-1">
+                        <span>©2020 Gregorio Martínez</span>
+                    </div>
+                </div>
+                <!-- ↑↑↑ fb icon group for md以下 ↑↑↑ -->
+                <div
+                    class="w-100 d-none d-xl-flex justify-content-center align-items-center mt-1 my-text-color-3 my-bg-color-6">
+                    <span>©2020 Gregorio Martínez</span>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center p-2 my-text-color-3 my-bg-color-5">
+                    <h6>禁止酒駕 <img src="./img/00index/stop.svg" alt="" class="stop-height"> 酒後不開車 安全有保障</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 自家JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- ============================================================================================= -->
+    <!-- ============================================================================================= -->
+    <!-- ============================================================================================= -->
+    <!-- ============================================================================================= -->
+    <!-- ============================================================================================= -->
+
+
+
+    <!--=========套件自帶 footer========= -->
+    <!-- ==================================history套件↑======================================= -->
+    <script
+        src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script id="rendered-js">
+        (function ($) {
+            $.fn.timeline = function () {
+                var selectors = {
+                    id: $(this),
+                    item: $(this).find(".timeline-item"),
+                    activeClass: "timeline-item--active",
+                    img: ".timeline__img"
+                };
+
+                selectors.item.eq(0).addClass(selectors.activeClass);
+                selectors.id.css(
+                    "background-image",
+                    "url(" +
+                    selectors.item.
+                        first().
+                        find(selectors.img).
+                        attr("src") +
+                    ")");
+
+                var itemLength = selectors.item.length;
+                $(window).scroll(function () {
+                    var max, min;
+                    var pos = $(this).scrollTop();
+                    selectors.item.each(function (i) {
+                        min = $(this).offset().top - 250;
+                        max = $(this).height() + $(this).offset().top;
+                        var that = $(this);
+                        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                            selectors.item.removeClass(selectors.activeClass);
+                            selectors.id.css(
+                                "background-image",
+                                "url(" +
+                                selectors.item.
+                                    last().
+                                    find(selectors.img).
+                                    attr("src") +
+                                ")");
+
+                            selectors.item.last().addClass(selectors.activeClass);
+                        } else if (pos <= max - 40 && pos >= min) {
+                            selectors.id.css(
+                                "background-image",
+                                "url(" +
+                                $(this).
+                                    find(selectors.img).
+                                    attr("src") +
+                                ")");
+
+                            selectors.item.removeClass(selectors.activeClass);
+                            $(this).addClass(selectors.activeClass);
+                        }
+                    });
+                });
+            };
+        })(jQuery);
+
+        $("#timeline-1").timeline();
+//# sourceURL=pen.js
+
+    </script>
+</body>
+
+</html>

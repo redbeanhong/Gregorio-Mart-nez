@@ -1,0 +1,153 @@
+
+// ---本頁放置所有nav跟footer使用之CSS設定---
+// 請勿放入其他CSS，感恩!
+
+// 匯入樣板CSS
+@import '_style_guide';
+@import '_mixin';
+
+//navbar的LOGO位置設定
+.my-nav-logo{
+    top: 3rem;
+    left: 5%;
+    transform: translateY(-50%);
+    @media screen and(min-width: 768px) {
+      top: 5rem;
+      left: 5%;
+      transform: translateY(-50%);
+  }
+
+    @media screen and(min-width: 1200px) {
+      top: 5rem;
+      left: 5%;
+      transform: translateY(-50%);
+    }
+}
+
+
+//navbar頁面背景跟尺寸
+.my-nav-bar {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/00index/bcg.jpg');
+}
+
+/* nav-btn被點擊後，底色變成黑色 */
+.nav-pills>li>a.active {
+    background-color: rgba($color: #f7f0f0, $alpha: 0.1) !important
+}
+
+//nav分頁按鈕按了之後會跑的動畫
+.nav-pills>li>a:hover {
+    transform: scale(1.5);
+}
+
+
+//漢堡條
+
+//----- Header styling -----
+// Change this to fit your needs
+// This example is assuming that you are using the hamburger menu button in the header
+
+.header-menu {
+  position: absolute;
+  top: 3rem;
+  right: 5%;
+  padding: 0;
+  transform: translateY(-50%);
+  &>a{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  @media screen and(min-width: 768px) {
+    top: 5rem;
+  }
+
+  @media screen and(min-width: 1200px) {
+    top: 5rem;
+  }
+}
+  
+  //----- Hamburger component -----
+  
+// Config
+$hamburger-height: 30px;
+$hamburger-width: 40px;
+$hamburger-layer-height: 1px;
+$hamburger-colour: #FFF;
+  
+// Structure
+.hamburger {
+  display: block;
+  position: absolute;
+  height: $hamburger-width;
+  z-index: 2;
+}
+  
+.hamburger-inner { 
+  display: block;
+  width: $hamburger-width;
+  height: $hamburger-layer-height; 
+  margin-top: $hamburger-layer-height * 10;
+  background: $hamburger-colour;
+  
+  &::before, &::after { 
+    display: block; 
+    position: absolute; 
+    content: "";
+    z-index: -1;
+    width: $hamburger-width; 
+    height: $hamburger-layer-height; 
+    background: $hamburger-colour;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; 
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    top: $hamburger-layer-height * 20;
+  }
+}
+  
+// Clicked State
+.hamburger-open {
+  .hamburger-inner {
+    background: none;
+
+    &::before, &::after {
+      top: $hamburger-layer-height * 2; 
+    }
+    &::before {
+      -webkit-transform: rotate(-45deg); 
+      -ms-transform: rotate(-45deg); 
+      transform: rotate(-45deg);
+    }
+    &::after {
+      -webkit-transform: rotate(45deg); 
+      -ms-transform: rotate(45deg); 
+      transform: rotate(45deg);
+    }
+  } 
+}
+
+.footer-bg{
+  background-image: url(../img/00index/footer-bcg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.stop-height{
+  height: 45px;
+  transform: translateY(-10px);
+
+  //平板版
+  @media screen and(min-width: 768px) {
+      height: 50px;
+      transform: translateY(-10px);
+  }
+
+  
+}

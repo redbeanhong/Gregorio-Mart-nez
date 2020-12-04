@@ -1,0 +1,726 @@
+@import '_style_guide';
+
+html {
+    scroll-behavior: smooth;
+}
+
+// 封面圖片
+
+.bcimg{
+    background-image:url('../img/00index/bcg-img.jpg');
+    background-position: top;
+    background-size: cover;
+}
+.z-99{
+    z-index: 99;
+}
+
+.z-3{
+    z-index: 3;
+}
+
+.z-2{
+    z-index: 2;
+}
+
+.z-1{
+    z-index: 1;
+}
+
+.z-0{
+    z-index: 0;
+}
+.bottom-300{
+    bottom: 50%;
+}
+// 副標題
+.index-text{
+    // opacity: 0;
+    // 手機板
+    font-size: 1.45rem;
+    font-weight: 900;
+    
+
+    // 平板版
+    @media screen and(min-width: 768px) {
+        
+    }
+
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+        font-weight: 500px;
+    }
+}
+
+
+
+.winebox-height{
+    height: 65vh;
+    top:130px;
+
+    // 平板版
+    @media screen and(min-width: 768px) {
+    top:200px
+    }
+
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+        top:200px;
+    }
+
+
+}
+
+.title-high{
+    height: 50vh;
+}
+
+.h-85{
+    height: 85vh;
+    
+     // 電腦版
+    @media screen and(min-width: 1200px) {
+        height: 85vh;
+        }
+}
+
+.h-320{
+    height: 320px;
+    position: relative;
+    top:0px;
+
+    @media screen and(min-width: 768px) {
+        top:210px
+        }
+    
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+        top:210px;
+    }
+}
+
+
+
+// .golden-img{
+//     background-image: url('../img/00index/金色圓圓.svg');
+//     width: 50%;
+//     height: 50%;
+//     background-position: center;
+//     background-size: cover;
+// }
+
+
+.winebox{
+    width: 50%;
+    height: 75%;
+}
+
+.golden{
+    bottom: 30px;
+}
+
+.wine{
+    bottom: 28px;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.t-200{
+    position: relative;
+    top: 200px;
+}
+
+
+//scroll down
+
+
+.demo a {
+    // position: absolute;
+    // bottom: -140px;
+    // left: 48.3%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.demo a:hover {
+    opacity: .5;
+}
+  
+
+#section05 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+    }
+    @-webkit-keyframes sdb05 {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+    @keyframes sdb05 {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+}
+  
+
+  
+#wine-fake-pc{
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.scroll_box{
+    width: 200px;
+    height: 100px;
+    // background: yellow;
+    margin-top: 50px;
+
+    @media screen and(min-width: 768px) {
+        margin-top: 130px;
+        }
+    
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+        margin-top: -20px;
+    }
+}
+
+
+// 動畫
+.animation{
+    animation-name: title;
+    animation-duration: 2s;
+}
+
+@keyframes title{
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+    }
+}
+
+// .animation_1{
+//     animation-name: abouttitle1;
+//     animation-duration: 2s;
+//     animation-delay: 1s;
+//     animation-fill-mode: forwards;
+// }
+
+// @keyframes abouttitle1{
+//     from {
+//         opacity: 0;
+//       }
+//       to {
+//         opacity: 1;
+//     }
+// }
+
+// .animation_2{
+//     animation-name: abouttitle2;
+//     animation-duration: 2s;
+//     animation-delay: 1.75s;
+//     animation-fill-mode: forwards;
+// }
+
+// @keyframes abouttitle2{
+//     from {
+//         opacity: 0;
+//       }
+//       to {
+//         opacity: 1;
+//     }
+// }
+
+
+.w-220{
+    width: 220px;
+}
+/* 游標閃啊閃 */
+// @keyframes blink-caret {
+//   from, to { box-shadow: 1px 0 0 0 transparent; }
+//   50% { box-shadow: 1px 0 0 0; }
+// }
+
+
+// ----------------紅酒區域-----------
+
+.vh-15{
+
+    //平板版
+    @media screen and(min-width: 768px) {
+        height: 15vh;
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+        height: 15vh;
+    }
+}
+
+//背景在此
+.wine-bcg{
+    background-image: url('../img/02wine/wine-bcg.jpg');
+}
+
+.wine-bcg-2{
+    background-image: url('../img/02wine/wine-bcg-2-768px.jpg');
+    //平板版
+    @media screen and(min-width: 768px) {
+       
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+        background-image: url('../img/02wine/wine-bcg-2-1920px.jpg');
+    }
+}
+
+//分頁用
+
+.wine-each{
+    //手機版
+    
+
+    display: none;
+    &.action{
+        display: block;
+        
+    }
+
+    //平板版
+    @media screen and(min-width: 768px) {
+        display: block;
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+        display: block;
+        &.action{
+            display: block;
+            
+        }
+    }
+
+    
+    
+}
+
+//紅酒標題區
+.wine-title-area{
+    display: none;
+
+    //手機版
+    &.action{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-image: url('../img/02wine/wine-bcg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 99;
+
+        h2{
+            font-size: 1.1rem;
+        }
+
+    }
+
+    //平板版
+    @media screen and(min-width: 768px) {
+        padding-top: calc(5rem + 20px);
+        display: none;
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+        padding-top: calc(5rem + 20px);
+        display: none;
+    }
+
+    //紅酒title
+    .my-title-group{
+        margin: 0 0 2rem 0;
+
+        //中文字+左右邊線
+        .my-wine-title{
+            position: relative;
+            display: inline-block;
+            
+    
+            &::before,
+            &::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 1px;
+            background-color: $my-color-4;
+            top: 50%;
+            }
+            &::before {
+                left: -50px;
+            }
+            &::after {
+                right: -50px;
+            }
+        }
+
+        //紅酒title active
+        &.active{
+            //字顏色變白色
+            color: $my-color-3;
+            
+
+            //標題左右線條變長
+            .my-wine-title{
+
+                &::before,
+                &::after {
+                    transition: 1s;
+                    content: "";
+                    position: absolute;
+                    width: 40px;
+                    height: 1px;
+                    background-color: $my-color-3;
+                    top: 50%;
+                }
+                &::before {
+                    left: -60px;
+                }
+                &::after {
+                    right: -60px;
+                }
+            }
+        }
+    
+        &:hover{
+            color: $my-color-3;
+        }
+    }
+}
+
+.wine-title-padding{
+    padding-top: calc(5rem + 20px);
+}
+
+//紅酒區域的高度
+.wine-area-height{
+    //手機版
+        height: 100vh;
+
+    //平板版
+    @media screen and(min-width: 768px) {
+       height: 85vh;
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+        height: 100vh;
+    }
+
+    //酒瓶下面的年份
+    .year-text{
+        //手機版
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 180px;
+        font-weight: 900;
+        writing-mode: vertical-rl;
+        color: $my-color-4;
+        transform: rotate(180deg) translateX(30%);
+        letter-spacing: 0px;
+        bottom: 0;
+        
+
+        //平板版
+        @media screen and(min-width: 768px) {
+            font-size: 180px;
+            transform: rotate(180deg);
+            letter-spacing: 0px;
+            bottom: 0;
+            right: -100px;
+        }
+
+        //電腦版
+        @media screen and(min-width: 1200px) {
+            font-size: 310px;
+            transform:rotate(180deg) translateX(30%);
+            letter-spacing: 15px;
+        }
+    }
+
+    //平板的酒title
+    .info-text{
+        //手機版
+        font-size: 50px;
+        font-weight: 900;
+        writing-mode: vertical-rl;
+        color: $my-color-3;
+        transform: rotate(180deg) ;
+        letter-spacing: 0px;
+
+        //平板版
+        @media screen and(min-width: 768px) {
+            font-size: 55px;
+            bottom: 480px;
+            right: -50px;
+        }
+    }
+    
+}
+
+//紅酒的高度
+.wine-height{
+    //手機版
+    height: 75%;
+
+    //平板版
+    @media screen and(min-width: 768px) {
+    height: 85%;
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+        height: 85%;
+    }
+}
+
+//品種區域的高度
+.wine-content-height{
+    //手機版不給高度
+        
+    //平板版
+    @media screen and(min-width: 768px) {
+       height: 85vh;
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+        height: 100vh;
+    }
+}
+
+
+// -------------------測試中-------------
+
+// 電腦版LAX區
+.wine-sticky-height{
+    height: 7500px;
+}
+
+//紅酒title
+.wine-title-group-pc{
+    margin: 0 0 2rem 0;
+
+    //中文字+左右邊線
+    .wine-title-pc{
+        position: relative;
+        display: inline-block;
+        
+
+        &::before,
+        &::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        background-color: $my-color-4;
+        top: 50%;
+        }
+        &::before {
+            left: -50px;
+        }
+        &::after {
+            right: -50px;
+        }
+    }
+
+    //紅酒title active
+    &.active{
+        //字顏色變白色
+        color: $my-color-3;
+
+        //標題左右線條變長
+        .wine-title-pc{
+
+            &::before,
+            &::after {
+                transition: 1s;
+                content: "";
+                position: absolute;
+                width: 60px;
+                height: 1px;
+                background-color: $my-color-3;
+                top: 50%;
+            }
+            &::before {
+                left: -80px;
+            }
+            &::after {
+                right: -80px;
+            }
+        }
+    }
+
+    &:hover{
+        color: $my-color-3;
+    }
+}
+
+.w-120{
+    width: 120%;
+    left: 0;
+}
+
+.bg-redd{
+    background-color: rgb(61, 0, 0);
+}
+
+.h-500{
+    height: 500px;
+}
+
+#fake-wine-1{
+    top: 1500px;
+}
+
+#fake-wine-2{
+    top: 3000px;
+}
+
+#fake-wine-3{
+    top: 4500px;
+}
+
+#fake-wine-4{
+    top: 6000px;
+}
+
+
+// ----------亂寫的動畫們----------------
+.bcimg.show{
+    animation: bcg-in 3s ease ;
+}
+
+.golden.show{
+    animation: golden-run 2s ease 1s;
+}
+
+// 打字效果//
+.typing.show {
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 6.5s steps(15, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+}
+
+.typing2.show {
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing2 7.9s steps(15, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+}
+
+
+/* 背景動畫 */
+@keyframes bcg-in {
+    0%{
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    
+    100%{
+      transform: scale(1);
+      opacity: 1;
+    }
+    
+}
+
+/* 黃金動畫 */
+@keyframes golden-run {
+  0%{
+    transform: rotate(180deg);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+/* 列印效果 */
+@keyframes typing {
+  0%{
+      width: 0;
+  }
+  46%{
+      width: 0;
+  }
+  100%{
+      width: 15em;
+  }
+  
+}
+
+
+/* 列印效果 */
+@keyframes typing2 {
+  0%{
+      width: 0;
+  }
+  55%{
+      width: 0;
+  }
+  
+  100%{
+      width: 15em;
+  }
+  
+}
+  
+

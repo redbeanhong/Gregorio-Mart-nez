@@ -1,0 +1,317 @@
+@import '_style_guide';
+
+// my-estate-container 葡萄園 & 風土
+.container {
+    width: 100%;
+}
+
+
+.grape-card-group{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    // padding: 5rem 0 0 0;
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+      padding: 0;
+    } 
+}
+
+.fake{
+  margin: 0 0 5rem 0;
+      //電腦版
+      @media screen and(min-width: 1200px) {
+        margin: 7rem 0;
+      } 
+}
+
+.text-box{
+    width: 100%;
+    padding: 2rem;
+    
+
+      //電腦版
+      @media screen and(min-width: 1200px) {
+        width: 50%;
+        padding: 0 5rem;
+      }
+}
+
+.estate-h1,
+h2,
+p{
+    color: white;
+}
+
+.estate-h1{
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+  padding: 1.2rem 0;
+  margin: 0;
+  text-align: start;
+
+}
+
+.text-box p{
+    margin: 25px 0 0 0;
+}
+
+.my-card{
+    width: 100%;
+
+      //電腦版
+        @media screen and(min-width: 1200px) {
+          width: 50%;
+        }
+}
+
+/*葡萄浮出來的動畫*/
+.fade-in{
+  //電腦版
+  @media screen and(min-width: 1200px) {
+    @keyframes fade-in{
+      from { 
+        transform: translateY(100px);
+        opacity:0;
+       } 
+      to {
+        transform: translateY(0);
+        opacity:1; 
+       }
+    }
+    animation: fade-in; /*動畫名稱*/
+    animation-duration: 1.5s; /*動畫持續時間*/
+    animation:fade-in 1.5s; /*針對webkit內核*/
+    animation-delay: 1.3s;
+  }
+}
+.grape-box{
+  order: 1;
+
+  //電腦版
+  // @media screen and(min-width: 1200px) {
+
+  // }
+}
+
+// 葡萄
+.g1{
+  width: 150px;
+  padding: 20% 0 0 0;
+}
+
+.g2{
+  width: 100px;
+}
+
+.g3{
+  width: 100px;
+
+  //電腦版
+   @media screen and(min-width:1200px) {
+     margin: -380px 0 0 418px;
+   }
+}
+
+.g4{
+  width: 150px;
+  //電腦版
+   @media screen and(min-width:1200px) {
+    margin: -125px 0 0 0;
+   }
+}
+
+.g5{
+  width: 150px;
+  padding-top: 100px;
+}
+
+.grapeThing{
+  display: none;
+    //電腦版
+    @media screen and(min-width: 1200px) {
+      display: block;
+    }
+}
+////////////////////////////////////////////////////////
+
+//3cards
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.col-4 {
+  padding: 0;
+}
+
+.card-height {
+
+  //電腦版
+    @media screen and(min-width: 1200px) {
+      height: 500px;
+
+      &:hover{
+          .mask{
+              transform: translateY(-100%);
+              transition: transform 1.5s;
+          }
+          .text{
+              transform: translateY(-100%);
+              transition: transform 1.5s;
+
+          }
+        }
+      }
+}
+
+
+
+.content {
+  width: 100%;
+  height: 200%;
+  
+
+    //平板版
+    @media screen and(min-width: 768px){
+      padding: 5rem 0;
+    }
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+      position: none;
+      top: 0;
+      padding: 0;
+    }
+}
+
+span{
+  color: white;
+}
+
+.my-cards-small-title{
+ 
+  //電腦版
+    @media screen and(min-width: 1200px) {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      align-items: center;
+      padding: 54px;
+      }
+}
+
+.my-cards-title{
+  
+    //電腦版
+    @media screen and(min-width: 1200px) {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      align-items: flex-end;
+      padding: 54px;
+    }
+}
+
+// hr{
+//   width: 70%;
+//   height: 3px;
+//   margin: 50px 0 0 0 ;
+//   border: 0;
+//   background: white;
+//   display: flex;
+//   justify-content: start;
+// }
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+
+ //電腦版
+    @media screen and(min-width: 1200px) {
+      display: block;
+    }
+}
+
+.bcimg-1{
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/05estate/159拷貝.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+}
+
+.bcimg-2{
+
+    //電腦版
+    @media screen and(min-width: 1200px) {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/05estate/5011拷貝拷貝.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+}
+
+.bcimg-3{
+  
+    //電腦版
+    @media screen and(min-width: 1200px) {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/05estate/3001拷貝.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+}
+
+.text-decoration-none{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+  
+    //平板版
+    @media screen and(min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      padding: 4.5rem 0 4.5rem 0;
+    }
+    //電腦版
+    @media screen and(min-width: 1200px) {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 4.5rem 4.5rem 0;
+    }
+}
+
+#gototop{
+  right: 0;
+  bottom: 30px;
+
+  
+  //平板版
+  @media screen and(min-width: 768px) {
+      right: 30px;
+      bottom: 30px;
+  }
+
+  //電腦版
+  @media screen and(min-width: 1200px) {
+      right: 30px;
+      bottom: 30px;
+      
+  }
+}
+
+
+
+

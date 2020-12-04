@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馬丁尼茲G.M酒莊</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- GOOGLE字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Serif+TC:wght@400;900&display=swap"
+        rel="stylesheet">
+    <!-- 紅酒動畫 -->
+    <link rel="stylesheet" href="./css/wineglass.css">
+    <!-- nav&footer -->
+    <link rel="stylesheet" href="./css/nav-footer.css">
+
+    <style>
+        #img {
+            background-color: brown;
+            width: 200px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            animation-name: img_photo;
+            animation-duration:1s;
+            position: absolute;
+        }
+
+        @keyframes img_photo{
+            from{
+                top:0;
+            }
+            to{
+                bottom: 400px;
+            }
+        }
+
+        #img_container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ↓↓↓ header 請勿改動感謝 ↓↓↓ -->
+    <header>
+        <div class="pos-f-t fixed-top">
+            <!-- nav-icon，點擊後會跳出navbar -->
+            <nav class="fixed-top justify-content-end">
+                <button class="navbar-toggler header-menu" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent">
+                    <!-- 漢堡條 -->
+                    <a id="header-button" class="hamburger" href="#">
+                        <div class="hamburger-inner"></div>
+                    </a>
+                </button>
+            </nav>
+
+            <!-- navbar -->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="my-nav-bar my-bcg">
+                    <div class="my-mask">
+                        <div class="d-flex align-items-center position-relative w-100 h-100">
+                            <!-- navbar的LOGO -->
+                            <li class="my-nav-logo position-absolute">
+                                <a class="my-text-color-3" href="./index.html">
+                                    <img src="./img/00index/logo.png" alt="logo" width="25%">
+                                </a>
+                            </li>
+
+                            <!-- navbar的內文 -->
+                            <div class="container">
+                                <div class="row">
+
+                                    <!-- 分頁連結的標題 -->
+                                    <div class="col-12 col-md-6 ">
+                                        <ul
+                                            class="w-100 p-3 navbar-btngroup my-text-color-3 nav flex-column nav-pills nav-fill">
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3 active" href="./index.html">
+                                                    <h2>HOME</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./02wine.html">
+                                                    <h2>Wine</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./03about.html">
+                                                    <h2>About</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./04history.html">
+                                                    <h2>History</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./05estate.html">
+                                                    <h2>Estate</h2>
+                                                </a>
+                                            </li>
+                                            <!-- 聯絡我們，在電腦版消失，手機板出現 -->
+                                            <li class="nav-item d-block d-md-none">
+                                                <a class="nav-link my-text-color-3" href="./06contact.html">
+                                                    <h2>Contact</h2>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 聯絡方式，在手機板出現，電腦版消失 -->
+                                    <div class="col-12 col-md-6 d-none d-md-block">
+                                        <div class="w-100 p-3 my-text-color-3">
+                                            <h2>Contact</h2>
+                                            <br>
+                                            <div class="mycconnection">
+                                                <span>
+                                                    <h3>馬丁尼茲G.M酒莊</h3>
+                                                    <p>T:+002-34-941-226-263</p>
+                                                    <p>E:info@gregoriomartinez.com</p>
+                                                    <p>A:Polígono 1 Parcela 12- Nalda La Rioja(Ubicación
+                                                        bodega),26002Logroño,
+                                                        La Rioja</p>
+                                                    <p>AM8:00-PM17:00</p>
+                                                </span>
+                                            </div>
+                                            <br>
+                                            <div class="mycconnection">
+                                                <span>
+                                                    <h3>晨星出版有限公司</h3>
+                                                    <p>T:04-2359-5819</p>
+                                                    <p>E:service@morningstar.com.tw</p>
+                                                    <p>A:臺中市西屯區協和里工業區三十路一號</p>
+                                                    <p>AM8:00-PM17:00</p>
+                                                </span>
+                                            </div>
+                                            <br>
+                                            <!-- 改成連結到Contact頁面 -->
+                                            <a class="nav-link my-text-color-3 my-btn" href="./06contact.html">
+                                                <h3>Contact</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!---------------------------------------->
+
+
+
+    <main>
+        <!-- ↓↓↓ 新分頁轉場動畫，請勿改動感謝 ↓↓↓ -->
+        <div class="winebcg fixed-top">
+            <div class="chalice">
+                <div class="liquid red-wine"></div>
+            </div>
+        </div>
+        <!---------------------------------------->
+
+
+
+        <!-- ↓↓↓ 內容內容內容由此開始 ↓↓↓ -->
+
+        <h1 class="my-text-color-3">Index</h1>
+
+        <!---------------------------------------->
+        
+    </main>
+
+
+
+    <!-- ↓↓↓ footer 請勿改動感謝 ↓↓↓ -->
+    <footer>
+        <div class="container p-5 my-text-color-3">
+            <div class="row">
+                <div class="col-12 col-md-12 col-xl-4 d-flex flex-column justify-content-between">
+                    <div
+                        class="d-flex justify-content-md-center justify-content-xl-center align-items-center mb-0 mb-md-5 mb-xl-0">
+                        <img src="./img/00index/logo.png" alt="" width="200px">
+                    </div>
+                    <!-- ↓↓↓ fb icon group for 電腦版 ↓↓↓ -->
+                    <div class="d-none d-md-none d-xl-block">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="my-circle my-bg-color-3" href="https://www.facebook.com/fincagregoriomartinez/"
+                                target="_blank">
+                                <img src="./img/00index/facebook.svg" alt="facebook" height="100%">
+                            </a>
+                            <a class="my-circle my-bg-color-3 mx-3"
+                                href="https://instagram.com/bodegas_gregorio_martinez?igshid=lx1t13rmrum0"
+                                target="_blank">
+                                <img src="./img/00index/instagram.svg" alt="instagram" height="100%">
+                            </a>
+                            <a class="my-circle my-bg-color-3" href="https://www.youtube.com/watch?v=QdbE9mBoG8U"
+                                target="_blank">
+                                <img src="./img/00index/youtube.svg" alt="youtube" height="100%">
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-1 my-text-color-3">
+                            <span>©2020 Gregorio Martínez</span>
+                        </div>
+                    </div>
+                    <!-- ↑↑↑ fb icon group for 電腦版 ↑↑↑ -->
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 my-5 my-md-0">
+                    <span>
+                        <h3>馬丁尼茲G.M酒莊</h3>
+                        <p>T:+002-34-941-226-263</p>
+                        <p>E:info@gregoriomartinez.com</p>
+                        <p>A:Polígono 1 Parcela 12- Nalda La Rioja(Ubicación
+                            bodega),26002Logroño,
+                            La Rioja</p>
+                        <p>AM8:00-PM17:00</p>
+                    </span>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <span>
+                        <h3>晨星出版有限公司</h3>
+                        <p>T:04-2359-5819</p>
+                        <p>E:service@morningstar.com.tw</p>
+                        <p>A:臺中市西屯區協和里工業區30路1號</p>
+                        <p>AM8:00-PM17:00</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ↓↓↓ fb icon group for md以下 ↓↓↓ -->
+        <div class="p-5 my-bg-color-4 d-block d-md-block d-xl-none">
+            <div class="d-flex justify-content-center align-items-center">
+                <a class="my-circle my-bg-color-3" href="https://www.facebook.com/fincagregoriomartinez/"
+                    target="_blank">
+                    <img src="./img/00index/facebook.svg" alt="facebook" height="100%">
+                </a>
+                <a class="my-circle my-bg-color-3 mx-4"
+                    href="https://instagram.com/bodegas_gregorio_martinez?igshid=lx1t13rmrum0" target="_blank">
+                    <img src="./img/00index/instagram.svg" alt="instagram" height="100%">
+                </a>
+                <a class="my-circle my-bg-color-3" href="https://www.youtube.com/watch?v=QdbE9mBoG8U" target="_blank">
+                    <img src="./img/00index/youtube.svg" alt="youtube" height="100%">
+                </a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center p-2 my-text-color-3">
+                <span>©2020 Gregorio Martínez</span>
+            </div>
+        </div>
+        <!-- ↑↑↑ fb icon group for md以下 ↑↑↑ -->
+
+        <div class="d-flex justify-content-center align-items-center p-2 my-text-color-3">
+            <h6>禁止酒駕 酒後不開車 安全有保障</h6>
+        </div>
+    </footer>
+    <!---------------------------------------->
+
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 自家JS -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

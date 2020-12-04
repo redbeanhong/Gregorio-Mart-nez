@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馬丁尼茲G.M酒莊</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- GOOGLE字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Serif+TC:wght@400;900&display=swap"
+        rel="stylesheet">
+    <!-- 紅酒動畫 -->
+    <link rel="stylesheet" href="./css/wineglass.css">
+    <!-- nav&footer -->
+    <link rel="stylesheet" href="./css/nav-footer.css">
+    <link rel="stylesheet" href="./css/03about.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+
+
+</head>
+
+<body>
+    <!-- ↓↓↓ header 請勿改動感謝 ↓↓↓ -->
+    <header>
+
+        <div class="pos-f-t fixed-top">
+            <!-- nav-icon，點擊後會跳出navbar -->
+            <nav class="fixed-top justify-content-end">
+                <button class="navbar-toggler header-menu" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent">
+                    <!-- 漢堡條 -->
+                    <a id="header-button" class="hamburger" href="#">
+                        <div class="hamburger-inner"></div>
+                    </a>
+                </button>
+            </nav>
+
+            <!-- navbar -->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="my-nav-bar my-bcg">
+                    <div class="my-mask">
+                        <div class="d-flex align-items-center position-relative w-100 h-100">
+                            <!-- navbar的LOGO -->
+                            <li class="my-nav-logo position-absolute">
+                                <a class="my-text-color-3" href="./index.html">
+                                    <img src="./img/00index/logo.png" alt="logo" width="25%">
+                                </a>
+                            </li>
+
+                            <!-- navbar的內文 -->
+                            <div class="container">
+                                <div class="row">
+
+                                    <!-- 分頁連結的標題 -->
+                                    <div class="col-12 col-md-6 ">
+                                        <ul
+                                            class="w-100 p-3 navbar-btngroup my-text-color-3 nav flex-column nav-pills nav-fill">
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./index.html">
+                                                    <h2>HOME</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./02wine.html">
+                                                    <h2>Wine</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3 active" href="./03about.html">
+                                                    <h2>About</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./04history.html">
+                                                    <h2>History</h2>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link my-text-color-3" href="./05estate.html">
+                                                    <h2>Estate</h2>
+                                                </a>
+                                            </li>
+                                            <!-- 聯絡我們，在電腦版消失，手機板出現 -->
+                                            <li class="nav-item d-block d-md-none">
+                                                <a class="nav-link my-text-color-3" href="./06contact.html">
+                                                    <h2>Contact</h2>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 聯絡方式，在手機板出現，電腦版消失 -->
+                                    <div class="col-12 col-md-6 d-none d-md-block">
+                                        <div class="w-100 p-3 my-text-color-3">
+                                            <h2>Contact</h2>
+                                            <br>
+                                            <div class="mycconnection">
+                                                <span>
+                                                    <h3>馬丁尼茲G.M酒莊</h3>
+                                                    <p>T:+002-34-941-226-263</p>
+                                                    <p>E:info@gregoriomartinez.com</p>
+                                                    <p>A:Polígono 1 Parcela 12- Nalda La Rioja(Ubicación
+                                                        bodega),26002Logroño,
+                                                        La Rioja</p>
+                                                    <p>AM8:00-PM17:00</p>
+                                                </span>
+                                            </div>
+                                            <br>
+                                            <div class="mycconnection">
+                                                <span>
+                                                    <h3>晨星出版有限公司</h3>
+                                                    <p>T:04-2359-5819</p>
+                                                    <p>E:service@morningstar.com.tw</p>
+                                                    <p>A:臺中市西屯區協和里工業區30路1號</p>
+                                                    <p>AM8:00-PM17:00</p>
+                                                </span>
+                                            </div>
+                                            <br>
+                                            <!-- 改成連結到Contact頁面 -->
+                                            <a class="nav-link my-text-color-3 my-btn" href="./06contact.html">
+                                                <h3>Contact</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!---------------------------------------->
+
+
+
+    <main>
+        <!-- ↓↓↓ 新分頁轉場動畫，請勿改動感謝 ↓↓↓ -->
+        <div class="winebcg fixed-top">
+            <div class="chalice">
+                <div class="liquid red-wine"></div>
+            </div>
+        </div>
+        <!---------------------------------------->
+
+        <!-- ↓↓↓ 內容內容內容由此開始 ↓↓↓ -->
+
+        <!-- LOGO -->
+        <section class="position-relative w-100 logobar">
+            <div class="my-nav-logo position-absolute">
+                <a class="my-text-color-3" href="./index.html">
+                    <img src="./img/00index/logo.png" alt="logo" width="25%">
+                </a>
+            </div>
+        </section>
+
+        <!-- banner -->
+        <section class="area-width mx-auto position-relative bannerpadding">
+            <!-- 電腦版 banner -->
+            <div class="pt-100 position-absolute w-100 d-none d-xl-block">
+                <div class="pct-1 my-bcg position-relative"></div>
+                <div class="grape01 movegrape01 position-absolute my-bcg fade-in "></div>
+
+            </div>
+
+            <!-- 手機板 banner -->
+            <div class="w-100 d-block d-xl-none">
+                <div class="pct-1 my-bcg"></div>
+            </div>
+
+            <!-- 電腦版 葡萄酒產區圖片+黃標 -->
+            <div class="container position-relative my-text-color-3 d-none d-xl-block">
+                <div class="row justify-content-end">
+                    <div class="col-9 justify-content-end d-xl-flex pr-100">
+                        <div class="pct-2 my-bcg"></div>
+                    </div>
+                    <!-- //副標:舊世界葡萄酒(電腦版) -->
+                    <div class="col-2">
+                        <div class="pt-100 d-flex justify-content-end yellow-bar">
+                            <div class="w-100 h-100 position-relative">
+                                <div class="w-100 h-75 position-absolute my-bg-color-2"></div>
+                                <div class="w-100 writing-mode position-absolute text-bottom pr-4">
+                                    <h2>"舊世界的葡萄酒產區</h2>
+                                    <h2 class="pt-5 mr-2">歷史悠久的釀酒技術"</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 電腦版 西班牙文化 -->
+        <section class="mt-5 d-none d-xl-block position-relative">
+            <div class="grape02 my-bcg position-absolute movegrape02" data-aos="fade-up"></div>
+            <div class="container my-text-color-3">
+                <div class="row justify-content-end">
+                    <div class="col-1 positon-relative pt-20">
+                        <div class="writing-mode position-absolute text-right spin">
+                            <h2>Getting know Spain</h2>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="">
+                            <p class="about-h1">潛入西班牙的釀造文化</p>
+                        </div>
+                        <div class="mt-2 text-justify firstletter">
+                            <p class="spantext">
+                                其歷史可以追朔到三千年前，最早的葡萄園位於現今西南部安達魯西雅省的赫雷斯(Jerez)葡萄酒在西班牙的歷史文化中扮演非常重要的角色，它不僅是耶穌的血，也是日常餐桌不可或缺的元素。儘管西班的酒在歷史上似乎沒有大放異彩，但文豪莎士比亞和海明威都醉心於他。
+                                </span>
+                        </div>
+                        <div class="mt-3 text-justify">
+                            <span>西班牙葡萄酒真正在被世界看見是在十九世紀末，當時歐洲各地葡萄園被根瘤芽肆虐，波爾多酒商們紛紛來到里奧哈買酒，這也驗證了西班牙的釀酒實力。目前西班牙是世界上葡萄園覆蓋率最高的國家，也是第三大產區。目前許多酒莊開始積極轉型，希望將傳統的釀酒技術加入創新元素，持續釀造高品質的酒品。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 手機/平板 西班牙文化 -->
+        <section class="mt-xl-5 pt-5 pt-xl-0 d-block d-xl-none my-text-color-3 position-relative">
+            <div class="container">
+                <div class="col-10 p-0">
+                    <!-- //副標:舊世界葡萄酒(平板版) -->
+                    <div class="golden-bar position-relative my-bg-color-2 topsub d-none d-md-block">
+                        <div class="position-absolute d-flex flex-column h-100 w-100">
+                            <h2 class="subtitle01 position-relative">“舊世界葡萄酒產區</h2>
+                            <h2 class="subtitle01 position-relative pl-5">歷史悠久的釀酒技術”</h2>
+                        </div>
+                    </div>
+                    <!-- 副標:舊世界黃標靠右(手機板) -->
+                    <div class="golden-bar w-100 position-relative my-bg-color-2 topsub d-block d-md-none">
+                        <div class="position-absolute d-flex flex-column flex-end h-100 w-100">
+                            <h2 class="subtitle02 position-relative">“舊世界葡萄酒產區</h2>
+                            <h2 class="subtitle02 position-relative pl-5">歷史悠久的釀酒技術”</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-1 pt-20">
+                        <div class="writing-mode position-absolute spin ">
+                            <h2>Getting know Spain</h2>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="">
+                            <p class="about-h1">潛入西班牙的釀造文化</p>
+                        </div>
+                        <div class="mt-2 text-justify">
+                            <span class="">
+                                其歷史可以追朔到三千年前，最早的葡萄園位於現今西南部安達魯西雅省的赫雷斯(Jerez)葡萄酒在西班牙的歷史文化中扮演非常重要的角色，它不僅是耶穌的血，也是日常餐桌不可或缺的元素。儘管西班的酒在歷史上似乎沒有大放異彩，但文豪莎士比亞和海明威都醉心於他。
+                            </span>
+                        </div>
+                        <div class="mt-3 text-justify">
+                            <span>西班牙葡萄酒真正在被世界看見是在十九世紀末，當時歐洲各地葡萄園被根瘤芽肆虐，波爾多酒商們紛紛來到里奧哈買酒，這也驗證了西班牙的釀酒實力。目前西班牙是世界上葡萄園覆蓋率最高的國家，也是第三大產區。目前許多酒莊開始積極轉型，希望將傳統的釀酒技術加入創新元素，持續釀造高品質的酒品。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 電腦版 圖片區 -->
+        <section class="area-width mx-auto mt-5 position-relative pb-150 d-none d-xl-block">
+            <div class="w-100 pt-400 position-absolute d-flex justify-content-end">
+                <div class="pct-3 my-bcg position-absolute text-left text-bottom-50"></div>
+                <div class="pct-5 my-bcg z-3"></div>
+            </div>
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <div class="pct-4 my-bcg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 手機/平板 一張圖 -->
+        <section class="mt-5 d-block d-xl-none">
+            <div class="w-100">
+                <div class="pct-4 my-bcg"></div>
+            </div>
+        </section>
+
+        <!-- 歐洲產地保護制度 + 大葡萄電腦版 -->
+        <section class="position-relative area-width mx-auto purple-height d-none" id="purple-area">
+
+            <div class="sticky-top pt-5 vh-100 over-flow-hidden">
+                <!-- 滿版地圖背景 -->
+                <img src="./img/03about/地圖.svg" class="position-absolute" alt="" width="100%">
+
+                <!-- 靠左黃標題 -->
+                <div class="golden-bar my-bg-color-2 position-absolute"></div>
+
+                <!-- 標題內文 -->
+                <div class="container my-text-color-3 position-relative">
+                    <div class="row">
+                        <div class="col-12 col-xl-7">
+                            <div class="golden-height position-relative w-100">
+                                <div
+                                    class="position-absolute d-flex flex-column justify-content-center h-100 w-100 align-items-xl-start align-items-center">
+                                    <div class="">
+                                        <h2>“歐洲原產地保護制度</h2>
+                                        <h2 class="pl-5">給您最尊爵的品質保證”</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-5 mt-4 mt-xl-0">
+                            <div class="text-justify">
+                                <span>里奧哈Rioja
+                                    是西班牙最富盛名的產區，也是第一個被界定為法定優良產區的地方。品質管控從種植、採摘到釀製、陳放都有一定的規範。所有的酒在上市前都必須送到實驗室通過品質的檢驗。
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 大葡萄電腦版 -->
+                    <div class="row d-none d-md-none d-xl-flex mt-100">
+                        <div class="col-7 pl-1">
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="purple-circle my-bcg"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 分五個等級 -->
+                    <div class="row d-none d-md-none d-xl-flex w-100 purple-text-1 position-absolute lax"
+                        data-lax-opacity="(document.querySelector('#purple-area').offsetTop) 0, (document.querySelector('#purple-area').offsetTop+500) 1, (document.querySelector('#purple-area').offsetTop+7200) 1,(document.querySelector('#purple-area').offsetTop+8000) 0">
+                        <div class="col-7">
+
+                        </div>
+                        <div class="col-5">
+                            <h3>西班牙的葡萄酒一共分為五個等級</h3>
+                        </div>
+                    </div>
+
+                    <!-- text-1 -->
+                    <div class="row d-none d-md-none d-xl-flex w-100 purple-text-2 position-absolute lax"
+                        data-lax-opacity="(document.querySelector('#purple-area').offsetTop+500) 0, (document.querySelector('#purple-area').offsetTop+1200) 1,(document.querySelector('#purple-area').offsetTop+2000) 0">
+                        <div class="col-7 d-flex justify-content-center pt-3 lax"
+                            data-lax-scale="(document.querySelector('#purple-area').offsetTop+500) 0.5, (document.querySelector('#purple-area').offsetTop+1200) 1,(document.querySelector('#purple-area').offsetTop+2000) 1">
+                            <h2>DOCa</h2>
+                        </div>
+                        <div class="col-5">
+                            <div class="w-100">
+                                <h2 class="my-text-color-2">法定優質產區酒</h2>
+                                <div class="line-left my-bg-color-3 position-relative"></div>
+                                <span>
+                                    到達這一等級的只有兩個產區:<br>
+                                    里奧哈(Rioja)& 普裡奧拉托(Priorat)當地法律規定必須達到 DO等級超過十年的產區，方可申請升級。
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- text-2 -->
+                    <div class="row d-none d-md-none d-xl-flex w-100 purple-text-3 position-absolute lax"
+                        data-lax-opacity="(document.querySelector('#purple-area').offsetTop+2000) 0, (document.querySelector('#purple-area').offsetTop+2700) 1,(document.querySelector('#purple-area').offsetTop+3500) 0">
+                        <div class="col-7 d-flex justify-content-center pt-3 lax"
+                            data-lax-scale="(document.querySelector('#purple-area').offsetTop+2000) 0.5, (document.querySelector('#purple-area').offsetTop+2700) 1,(document.querySelector('#purple-area').offsetTop+3500) 1">
+                            <h2>DO</h2>
+                        </div>
+                        <div class="col-5">
+                            <div class="w-100">
+                                <h2 class="my-text-color-2">法定產區酒</h2>
+                                <div class="line-left my-bg-color-3 position-relative"></div>
+                                <span>
+                                    必須采用特定的葡萄、特定的種植和釀造方式，達到一定的質量標准。這是西班牙比較主流的等級。
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- text-3 -->
+                    <div class="row d-none d-md-none d-xl-flex w-100 purple-text-4 position-absolute lax"
+                        data-lax-opacity="(document.querySelector('#purple-area').offsetTop+3500) 0, (document.querySelector('#purple-area').offsetTop+4200) 1,(document.querySelector('#purple-area').offsetTop+5000) 0">
+                        <div class="col-7 d-flex justify-content-center pt-3 lax"
+                            data-lax-scale="(document.querySelector('#purple-area').offsetTop+3500) 0.5, (document.querySelector('#purple-area').offsetTop+4200) 1,(document.querySelector('#purple-area').offsetTop+5000) 1">
+                            <h2>VDLT</h2>
+                        </div>
+                        <div class="col-5">
+                            <div class="w-100">
+                                <h2 class="my-text-color-2">優良地區餐酒</h2>
+                                <div class="line-left my-bg-color-3 position-relative"></div>
+                                <span>
+                                    地區餐酒，等同於法國的VDP(Vin de Pays)，通常來自於一個較大範圍的產區，像是安達魯希亞(Andalucia)這樣的一個大省份所生產的酒。
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- text-4 -->
+                    <div class="row d-none d-md-none d-xl-flex w-100 purple-text-5 position-absolute lax"
+                        data-lax-opacity="(document.querySelector('#purple-area').offsetTop+5000) 0, (document.querySelector('#purple-area').offsetTop+5700) 1,(document.querySelector('#purple-area').offsetTop+6500) 0">
+                        <div class="col-7 d-flex justify-content-center pt-3 lax"
+                            data-lax-scale="(document.querySelector('#purple-area').offsetTop+5000) 0.5, (document.querySelector('#purple-area').offsetTop+5700) 1,(document.querySelector('#purple-area').offsetTop+6500) 1">
+                            <h2>VC</h2>
+                        </div>
+                        <div class="col-5">
+                            <div class="w-100">
+                                <h2 class="my-text-color-2">優質日常餐酒</h2>
+                                <div class="line-left my-bg-color-3 position-relative"></div>
+                                <span>
+                                    必須達到 VCIG 等級超過五年的產區，方可申請升級為 DO。
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- text-5 -->
+                    <div class="row d-none d-md-none d-xl-flex w-100 purple-text-6 position-absolute lax"
+                        data-lax-opacity="(document.querySelector('#purple-area').offsetTop+6500) 0, (document.querySelector('#purple-area').offsetTop+7200) 1,(document.querySelector('#purple-area').offsetTop+8000) 0">
+                        <div class="col-7 d-flex justify-content-center pt-4 lax"
+                            data-lax-scale="(document.querySelector('#purple-area').offsetTop+6500) 0.5, (document.querySelector('#purple-area').offsetTop+7200) 1,(document.querySelector('#purple-area').offsetTop+8000) 1">
+                            <h2>VDM</h2>
+                        </div>
+                        <div class="col-5">
+                            <div class="w-100">
+                                <h2 class="my-text-color-2">日常餐酒</h2>
+                                <div class="line-left my-bg-color-3 position-relative"></div>
+                                <span>
+                                    “Mesa”的西班牙語是“桌子”的意思，這是最最普通的餐酒，從不同產區采集不同葡萄品種混釀的散裝酒。
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 歐洲產地保護制度 平板/手機 -->
+
+        <section class="mt-5 position-relative area-width mx-auto d-block">
+            <!-- 滿版地圖背景 -->
+            <img src="./img/03about/地圖.svg" class="position-absolute" alt="" width="100%">
+
+            <!-- 靠左黃標題 -->
+            <div class="golden-bar my-bg-color-2 position-absolute"></div>
+            <!-- 標題內文 -->
+            <div class="container my-text-color-3">
+                <div class="row">
+                    <div class="col-12 col-xl-7">
+                        <div class="golden-height position-relative w-100">
+                            <div
+                                class="position-absolute d-flex flex-column justify-content-center h-100 w-100 align-items-xl-start align-items-center">
+                                <div class="">
+                                    <h2>“歐洲原產地保護制度</h2>
+                                    <h2 class="pl-5">給您最尊爵的品質保證”</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-5 mt-4 mt-xl-0">
+                        <div class="text-justify">
+                            <span>里奧哈Rioja
+                                是西班牙最富盛名的產區，也是第一個被界定為法定優良產區的地方。品質管控從種植、採摘到釀製、陳放都有一定的規範。所有的酒在上市前都必須送到實驗室通過品質的檢驗。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 大葡萄 平板/手機 -->
+        <section class="mt-3">
+            <div class="container">
+                <div class="row d-block d-md-block my-text-color-3">
+                    <div class="col-12">
+                        <div class="w-100 d-flex justify-content-center">
+                            <img src="./img/03about/big-purple-768px-去背.png" alt="" width="70%" class="m-auto">
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <h2 class="text-center">西班牙的葡萄酒一共分為五個等級：</h2>
+                    </div>
+                    <div class="col-12 mt-4 mt-4">
+                        <div class="text-center w-75 m-auto w-75 m-auto">
+                            <h2>DOCa</h2>
+                            <p class="my-text-color-2 golden-border py-2 mb-2">法定優質產區酒</p>
+                            <span>
+                                到達這一等級的只有兩個產區:<br>
+                                里奧哈(Rioja)& 普裡奧拉托(Priorat)當地法律規定必須達到 DO等級超過十年的產區，方可申請升級。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="text-center w-75 m-auto">
+                            <h2>DO</h2>
+                            <p class="my-text-color-2 golden-border py-2 mb-2">法定產區酒</p>
+                            <span>
+                                必須采用特定的葡萄、特定的種植和釀造方式，達到一定的質量標准。這是西班牙比較主流的等級。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="text-center w-75 m-auto">
+                            <h2>VDLT</h2>
+                            <p class="my-text-color-2 golden-border py-2 mb-2">優良地區餐酒</p>
+                            <span>
+                                地區餐酒，等同於法國的VDP(Vin de Pays)，通常來自於一個較大範圍的產區，像是安達魯希亞(Andalucia)這樣的一個大省份所生產的酒。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="text-center w-75 m-auto">
+                            <h2>VC </h2>
+                            <p class="my-text-color-2 golden-border py-2 mb-2">優質日常餐酒</p>
+                            <span>
+                                必須達到 VCIG 等級超過五年的產區，方可申請升級為 DO。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="text-center w-75 m-auto">
+                            <h2>VDM</h2>
+                            <p class="my-text-color-2 golden-border py-2 mb-2">日常餐酒</p>
+                            <span>
+                                “Mesa”的西班牙語是“桌子”的意思，這是最最普通的餐酒，從不同產區采集不同葡萄品種混釀的散裝酒。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 電腦版特殊地形 -->
+        <section class="mt-5 position-relative area-width mx-auto">
+            <!-- 手機/平板 照片 -->
+            <div class="w-100 d-block d-xl-none">
+                <div class="pct-6 my-bcg"></div>
+            </div>
+            <!-- 黃標靠右手機版 -->
+            <div
+                class="golden-height position-relative w-100 d-flex d-md-none my-text-color-3 w-100 d-flex justify-content-end top">
+                <div class="my-bg-color-2 position-absolute golden-bar-size"></div>
+                <div
+                    class="position-absolute golden-left-padding d-flex flex-column justify-content-center h-100 w-100 align-items-xl-start align-items-center">
+                    <div class="pl-5">
+                        <h2>“特殊地形環境</h2>
+                        <h2 class="pl-5">葡萄酒美妙的香氣”</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- 黃色標題 浮在上面 -->
+            <div class="w-100 position-absolute z-4">
+                <div class="container my-text-color-3">
+                    <div class="row justify-content-end">
+                        <!-- 電腦/平板靠右黃標題 -->
+                        <div class="col-xl-7 d-none d-md-block">
+                            <div class="golden-height position-relative w-100 d-flex justify-content-end top">
+                                <div class="my-bg-color-2 position-absolute golden-bar-size right"></div>
+                                <div
+                                    class="position-absolute d-flex flex-column justify-content-center h-100 w-100 align-items-md-end  align-items-center golden-right-padding">
+                                    <div class="">
+                                        <h2>“特殊地形環境</h2>
+                                        <h2 class="pl-5">葡萄酒美妙的香氣”</h2>
+                                    </div>
+                                </div>
+                                <!-- 葡萄一顆 -->
+                                <div class="purple position-absolute my-bcg d-none d-xl-block" data-aos="fade-left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 電腦版圖片 -->
+            <div class="pct-6 my-bcg d-none d-xl-block"></div>
+        </section>
+
+
+        <!-- 電腦版 酒莊特色 -->
+        <section class="mt-5 d-none d-xl-block">
+            <div class="container special-margin my-text-color-3">
+                <div class="row justify-content-end pb-150">
+                    <div class="col-xl-4" data-aos="zoom-in">
+                        <h3>數千年沉積的優質風土</h3>
+                        <h3>孕育出高品質葡萄</h3>
+                        <hr class="my-bg-color-2 mx-0 mt-2 mb-4 golden-line">
+                        <span class="text-justify">
+                            位於西班牙最知名的里奧哈產區，葡萄園座落於海拔700公尺的山脈。擁有較厚的紅粘土和上一個冰河時代的沉積砂。土壤加上海拔和風土條件，形成特殊的微型氣候，使我們能夠獲得良好陳釀潛力的優質葡萄酒。</span>
+                    </div>
+                    <div class="col-xl-4" data-aos="zoom-in">
+                        <h3>新鮮葡萄不落地</h3>
+                        <h3>直送酒窖保留純粹的芬香</h3>
+                        <hr class="my-bg-color-2 mx-0 mt-2 mb-4 golden-line">
+                        <span class=" text-justify">
+                            里奧哈大部分酒莊的葡萄園都座落於不同位址，而我們葡萄園都集中在一起，這讓我們釀出來的酒可以充分展現它的風土。另外，所有葡萄藤都在酒窖的方圓900公尺內，葡萄一採收下來就能馬上送入酒窖內，這是品質的關鍵。</span>
+                    </div>
+                    <div class="col-xl-4 position-relative">
+                        <!-- 電腦版 酒莊特色title -->
+                        <div class="position-absolute special-title align-items-top d-none d-xl-flex">
+                            <h2 class="writing-mode p-0 mr-4">Feature</h2>
+                            <p class="about-h1 p-0">酒莊特色</p>
+                        </div>
+                        <!--  -->
+                        <div class="div" data-aos="zoom-in" >
+                            <h3>葡萄百分百自種自釀</h3>
+                            <h3>從產地到餐桌步步把關</h3>
+
+                            <hr class="my-bg-color-2 mx-0 mt-2 mb-4 golden-line">
+                            <span class=" text-justify">
+                                葡萄是影響葡萄酒品質很重要的因素。我們以種植葡萄起家，專注於種植高品質葡萄。所有葡萄都來自於我們的葡萄園，使我們從種植開始就為品質把關。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="text-decoration-none rightside">
+                <div class="my-gototop position-relative ">
+                    <p>TOP</p>
+                </div>
+            </a>
+        </section>
+
+        <!-- 酒莊特色 平板/手機 -->
+        <section class="mt-5 d-block d-xl-none">
+            <div class="container special-margin my-text-color-3">
+                <div class="row justify-content-center pb-150">
+                    <div class="col-1">
+                        <div class="writing-mode position-absolute text-right pt-1">
+                            <h2 class="writing-mode mr-2 p-0">Feature</h2>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="">
+                            <p class="about-h1 p-0">酒莊特色</p>
+                        </div>
+                        <div class="">
+                            <h3>數千年沉積的優質風土</h3>
+                            <h3>孕育出高品質葡萄</h3>
+                            <hr class="my-bg-color-2 mx-0 mt-2 mb-4 golden-line">
+                            <span class="text-justify">
+                                位於西班牙最知名的里奧哈產區，葡萄園座落於海拔700公尺的山脈。擁有較厚的紅粘土和上一個冰河時代的沉積砂。土壤加上海拔和風土條件，形成特殊的微型氣候，使我們能夠獲得良好陳釀潛力的優質葡萄酒。</span>
+                        </div>
+                        <div class="my-5">
+                            <h3>新鮮葡萄不落地</h3>
+                            <h3>直送酒窖保留純粹的芬香</h3>
+                            <hr class="my-bg-color-2 mx-0 mt-2 mb-4 golden-line">
+                            <span class=" text-justify">
+                                里奧哈大部分酒莊的葡萄園都座落於不同位址，而我們葡萄園都集中在一起，這讓我們釀出來的酒可以充分展現它的風土。另外，所有葡萄藤都在酒窖的方圓900公尺內，葡萄一採收下來就能馬上送入酒窖內，這是品質的關鍵。</span>
+                        </div>
+
+
+                        <div class="position-relative">
+                            <h3>葡萄百分百自種自釀</h3>
+                            <h3>從產地到餐桌步步把關</h3>
+                            <hr class="my-bg-color-2 mx-0 mt-2 mb-4 golden-line">
+                            <span class=" text-justify">
+                                葡萄是影響葡萄酒品質很重要的因素。我們以種植葡萄起家，專注於種植高品質葡萄。所有葡萄都來自於我們的葡萄園，使我們從種植開始就為品質把關。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="text-decoration-none rightside">
+                <div class="my-gototop position-relative ">
+                    <p>TOP</p>
+                </div>
+            </a>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- ↓↓↓ footer 請勿改動感謝 ↓↓↓ -->
+    <footer>
+        <div class="footer-bg w-100">
+            <div class="my-mask-2">
+                <div class="container p-5 my-text-color-3">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-xl-4 d-flex flex-column justify-content-between">
+                            <div
+                                class="d-flex justify-content-md-center justify-content-xl-center align-items-center mb-0 mb-md-5 mb-xl-0">
+                                <img src="./img/00index/logo.png" alt="" width="200px">
+                            </div>
+                            <!-- ↓↓↓ fb icon group for 電腦版 ↓↓↓ -->
+                            <div class="d-none d-md-none d-xl-block">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a class="my-circle my-bg-color-3"
+                                        href="https://www.facebook.com/fincagregoriomartinez/" target="_blank">
+                                        <img src="./img/00index/facebook.svg" alt="facebook" height="100%">
+                                    </a>
+                                    <a class="my-circle my-bg-color-3 mx-3"
+                                        href="https://instagram.com/bodegas_gregorio_martinez?igshid=lx1t13rmrum0"
+                                        target="_blank">
+                                        <img src="./img/00index/instagram.svg" alt="instagram" height="100%">
+                                    </a>
+                                    <a class="my-circle my-bg-color-3"
+                                        href="https://www.youtube.com/watch?v=QdbE9mBoG8U" target="_blank">
+                                        <img src="./img/00index/youtube.svg" alt="youtube" height="100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ↑↑↑ fb icon group for 電腦版 ↑↑↑ -->
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4 my-5 my-md-0">
+                            <span>
+                                <h3>馬丁尼茲G.M酒莊</h3>
+                                <p>T:+002-34-941-226-263</p>
+                                <p>E:info@gregoriomartinez.com</p>
+                                <p>A:Polígono 1 Parcela 12- Nalda La Rioja(Ubicación
+                                    bodega),26002Logroño,
+                                    La Rioja</p>
+                                <p>AM8:00-PM17:00</p>
+                            </span>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <span>
+                                <h3>晨星出版有限公司</h3>
+                                <p>T:04-2359-5819</p>
+                                <p>E:service@morningstar.com.tw</p>
+                                <p>A:臺中市西屯區協和里工業區30路1號</p>
+                                <p>AM8:00-PM17:00</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ↓↓↓ fb icon group for md以下 ↓↓↓ -->
+                <div class="pt-4 pb-2 my-bg-color-6 d-block d-md-block d-xl-none">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="my-circle my-bg-color-3" href="https://www.facebook.com/fincagregoriomartinez/"
+                            target="_blank">
+                            <img src="./img/00index/facebook.svg" alt="facebook" height="100%">
+                        </a>
+                        <a class="my-circle my-bg-color-3 mx-4"
+                            href="https://instagram.com/bodegas_gregorio_martinez?igshid=lx1t13rmrum0" target="_blank">
+                            <img src="./img/00index/instagram.svg" alt="instagram" height="100%">
+                        </a>
+                        <a class="my-circle my-bg-color-3" href="https://www.youtube.com/watch?v=QdbE9mBoG8U"
+                            target="_blank">
+                            <img src="./img/00index/youtube.svg" alt="youtube" height="100%">
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-end my-text-color-3 mt-1">
+                        <span>©2020 Gregorio Martínez</span>
+                    </div>
+                </div>
+                <!-- ↑↑↑ fb icon group for md以下 ↑↑↑ -->
+                <div
+                    class="w-100 d-none d-xl-flex justify-content-center align-items-center mt-1 my-text-color-3 my-bg-color-6">
+                    <span>©2020 Gregorio Martínez</span>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center p-2 my-text-color-3 my-bg-color-5">
+                    <h6>禁止酒駕 <img src="./img/00index/stop.svg" alt="" class="stop-height"> 酒後不開車 安全有保障</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!---------------------------------------->
+
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- lax.js -->
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <!-- 自家JS -->
+    <script src="./js/03about.js"></script>
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/05estate.js"></script>
+
+
+</body>
+
+</html>

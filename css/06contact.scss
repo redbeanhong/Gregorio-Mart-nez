@@ -1,0 +1,212 @@
+
+@import '_style_guide';
+
+//表單內容說明
+.form-control{
+    background-color: $my-color-4;
+    color: white;
+    
+    &::placeholder {
+        color: white;
+    }
+}
+
+.form-group{
+    margin-bottom:50px;
+    height: 1%;
+    
+    // 平板版
+    @media screen and(min-width: 768px) {
+        margin-bottom:65px;
+    }
+
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 60px;
+        height: 4%;
+    }
+}
+
+.textarea-group{
+    margin-bottom:15px;   
+    height: 31%;
+
+    // 大手機版
+    @media screen and(min-width: 375px) {
+        height: 50%;
+    }
+
+    // 平板版
+    @media screen and(min-width: 768px) {
+        margin-top: 60px;
+        margin-bottom: -40px;
+    }
+
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+        margin-top: 70px;
+        margin-bottom: -40px;
+    }
+}
+
+
+.textarea-style{
+    width: 600px; 
+    height: 500px;
+}
+
+.label-style{
+    //手機
+    width: 300px; 
+    height: 40px;
+    border-radius: 5px;
+    border: unset;
+
+    // 平板版
+    @media screen and(min-width: 768px) {
+        width: 600px; 
+        height: 53px;
+    }
+
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+        
+    }
+}
+
+#Textarea{
+    width: 300px; 
+    height: 100%; 
+    border: unset;
+
+    // 平板版
+    @media screen and(min-width: 768px) {
+        width: 600px; 
+        height: 205px; 
+        
+    }
+
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+        
+    }
+}
+
+.form-style{
+    
+
+    // 平板版
+    @media screen and(min-width: 768px) {
+        
+        
+    }
+
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+    
+    }
+}
+
+.bcimg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/06contact/bcimg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.contactus_style{ 
+    color: white;
+    font-weight: 900;
+}
+
+.contact_style{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+
+// 平板版
+    @media screen and(min-width: 768px) {
+        font-size: 2rem;
+            
+    }
+    
+// 電腦版
+    @media screen and(min-width: 1200px) {
+            
+    }
+}
+
+//返回按鈕
+.back-button {
+    font-size: 20px;
+    color: white;
+    font-weight: 100px;
+    
+    padding: 0;
+    transition: all 0.2s;
+    
+// 平板版
+    @media screen and(min-width: 768px) {
+        font-size: 40px;
+    }
+
+ // 電腦版
+    @media screen and(min-width: 1200px) {
+        font-size: 50px;
+    }
+}
+  
+    .back-button:hover {
+            color: white;
+            text-decoration: none;
+    }
+
+  .back-button:active {
+    transform: translate(10px);
+    }
+
+  .topright{
+        left: 0;
+        top: -20px;
+        // 平板版
+        @media screen and(min-width: 768px) {
+            left: 0;
+            top: -40px;
+        }
+
+        // 電腦版
+        @media screen and(min-width: 1200px) {
+            left: -75px; 
+            top: 55px;
+        }
+    }
+
+
+.form-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130px;
+    height: 100vh;
+
+    // 大手機
+    @media screen and(min-width: 375px) {
+        margin-top: 0px;
+    }
+    
+    // 平板版
+    @media screen and(min-width: 768px) {
+        margin-top: 100px;
+    }
+        
+    // 電腦版
+    @media screen and(min-width: 1200px) {
+     
+    }
+}
+
+
