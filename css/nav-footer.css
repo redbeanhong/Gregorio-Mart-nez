@@ -129,15 +129,6 @@ body .h1-size {
   font-weight: 900;
 }
 
-body span {
-  font-size: 1rem;
-  letter-spacing: 0.8px;
-  font-weight: 400;
-  padding: calc(0.25rem + 2px) 0 0.25rem 0;
-  margin: 0;
-  line-height: 2rem;
-}
-
 body p {
   font-size: 1rem;
   letter-spacing: 0.8px;
@@ -355,13 +346,6 @@ body .my-gototop::before {
   background-color: #FFFFFF;
   -webkit-transform: translateY(-45px);
           transform: translateY(-45px);
-}
-
-.my-nav-logo {
-  top: 3rem;
-  left: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 @media screen and (min-width: 768px) {
