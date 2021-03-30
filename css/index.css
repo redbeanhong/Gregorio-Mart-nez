@@ -804,25 +804,9 @@ html {
   height: 500px;
 }
 
-.index-circle.show {
+.golden-circle.show {
   -webkit-animation: golden-run 2s ease 1s;
           animation: golden-run 2s ease 1s;
-}
-
-.typing.show {
-  white-space: nowrap;
-  border-right: 2px solid transparent;
-  -webkit-animation: typing 3s steps(15, end), blink-caret 0.75s step-end infinite;
-          animation: typing 3s steps(15, end), blink-caret 0.75s step-end infinite;
-  overflow: hidden;
-}
-
-.typing2.show {
-  white-space: nowrap;
-  border-right: 2px solid transparent;
-  -webkit-animation: typing2 4s steps(15, end), blink-caret 0.75s step-end infinite;
-          animation: typing2 4s steps(15, end), blink-caret 0.75s step-end infinite;
-  overflow: hidden;
 }
 
 /* 黃金動畫 */

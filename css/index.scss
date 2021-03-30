@@ -478,24 +478,24 @@ html {
 
 
 // ----------亂寫的動畫們----------------
-.index-circle.show{
+.golden-circle.show{
     animation: golden-run 2s ease 1s;
 }
 
 // 打字效果//
-.typing.show {
-    white-space: nowrap;
-    border-right: 2px solid transparent;
-    animation: typing 3s steps(15, end), blink-caret .75s step-end infinite;
-    overflow: hidden;
-}
+// .typing.show {
+//     white-space: nowrap;
+//     border-right: 2px solid transparent;
+//     animation: typing 3s steps(15, end), blink-caret .75s step-end infinite;
+//     overflow: hidden;
+// }
 
-.typing2.show {
-    white-space: nowrap;
-    border-right: 2px solid transparent;
-    animation: typing2 4s steps(15, end), blink-caret .75s step-end infinite;
-    overflow: hidden;
-}
+// .typing2.show {
+//     white-space: nowrap;
+//     border-right: 2px solid transparent;
+//     animation: typing2 4s steps(15, end), blink-caret .75s step-end infinite;
+//     overflow: hidden;
+// }
 
 /* 黃金動畫 */
 @keyframes golden-run {

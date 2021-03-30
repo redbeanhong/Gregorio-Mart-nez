@@ -4,9 +4,7 @@ function myload() {
     $(".winebcg").delay(1000).fadeOut(1000);
 
     //開場動畫
-    $(".index-circle").addClass("show");
-    $(".typing").addClass("show");
-    $(".typing2").addClass("show");
+    $(".golden-circle").addClass("show");
 
     //動畫關閉
     // $(".winebcg").hide();
